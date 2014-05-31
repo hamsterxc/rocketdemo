@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="top_margins">32dp</dimen>
+    <dimen name="info_empty_line_height">2dp</dimen>
+    <dimen name="info_empty_margin_between">4dp</dimen>
+    <dimen name="top_text_size">20sp</dimen>
+    <dimen name="info_text_size">12sp</dimen>
+    <dimen name="main_content_margins">8dp</dimen>
+    <dimen name="main_content_input_margin">16dp</dimen>
+    <dimen name="info_filled_image_size">32dp</dimen>
+    <dimen name="amount_width">120dp</dimen>
+
+</resources>

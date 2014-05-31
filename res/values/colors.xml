@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_top">#057</color>
+    <color name="info_empty_line">#818181</color>
+    <color name="top_text_color">@android:color/white</color>
+    <color name="background_bottom">#666</color>
+    <color name="background_valid">#fdedcf</color>
+    <color name="background_invalid">#e7d7d7</color>
+    <color name="background_default">@android:color/white</color>
+    <color name="card_number_valid">@android:color/black</color>
+    <color name="card_number_invalid">#f00</color>
+
+</resources>

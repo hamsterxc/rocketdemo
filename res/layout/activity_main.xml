@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/top_margins"
+        android:background="@color/background_top">
+
+        <TextView
+            android:id="@+id/main_top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/top_text_color"
+            android:textSize="@dimen/top_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/main_content_margins"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/main_info_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/info_empty"
+                    android:textSize="@dimen/info_text_size"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/info_empty_line_height"
+                    android:layout_marginTop="@dimen/info_empty_margin_between"
+                    android:src="@color/info_empty_line"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_info_filled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="@dimen/info_filled_image_size"
+                    android:layout_height="@dimen/info_filled_image_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/filled"/>
+
+                <TextView
+                    android:id="@+id/main_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_margins"
+                    android:textSize="@dimen/info_text_size"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/main_container_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/main_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_content_margins"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/main_info_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/empty_card"/>
+
+                    <ImageView
+                        android:id="@+id/main_info_image_secondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/main_info_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_margins"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_input_margin"
+                    android:text="@string/input_valid_through"/>
+
+                <EditText
+                    android:id="@+id/main_info_valid_through"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_margins"
+                    android:hint="@string/input_valid_through_hint"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_input_margin"
+                    android:text="@string/input_cvv"/>
+
+                <EditText
+                    android:id="@+id/main_info_cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_margins"
+                    android:hint="@string/input_cvv_hint"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_input_margin"
+                    android:text="@string/input_amount"/>
+
+                <EditText
+                    android:id="@+id/main_info_amount"
+                    android:layout_width="@dimen/amount_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_margins"
+                    android:singleLine="true"/>
+
+                <ImageView
+                    android:id="@+id/main_info_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_content_input_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/arrow"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@color/background_bottom"/>
+
+</LinearLayout>

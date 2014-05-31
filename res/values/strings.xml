@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rocket Demo</string>
+    <string name="title">Пополните счет переводом с зарплатной карты прямо сейчас &lt;b>без комиссии&lt;/b></string>
+    <string name="info_empty">ВВЕДИТЕ ДАННЫЕ ЗАРПЛАТНОЙ ИЛИ ДРУГОЙ КАРТЫ</string>
+    <string name="card_number_hint">0000 0000 0000 0000</string>
+    <string name="card_number_incorrect">Неверно введен номер карты</string>
+    <string name="input_valid_through">VALID THRU:</string>
+    <string name="input_valid_through_hint">MM/YY</string>
+    <string name="input_cvv">CVV2:</string>
+    <string name="input_cvv_hint">000</string>
+    <string name="input_amount">СУММА:</string>
+    <string name="dialog_title">The end</string>
+    <string name="dialog_text">The end of a demo.</string>
+
+</resources>
